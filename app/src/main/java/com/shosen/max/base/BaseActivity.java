@@ -25,6 +25,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
 
     public static BaseActivity instance;
 
+
     protected T mPresenter;
 
     public void setPresenter(T mPresenter) {
