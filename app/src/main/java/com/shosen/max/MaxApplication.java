@@ -28,6 +28,7 @@ public class MaxApplication extends Application {
 
     @Override
     public void onCreate() {
+        Log.d("tag", "test");
         application = this;
         init();
         super.onCreate();
