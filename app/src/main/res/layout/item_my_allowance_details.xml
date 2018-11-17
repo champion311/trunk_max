@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_car_owner_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="累计邀请1位车主"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_car_invite_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_car_owner_counts"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="2018-06-30"
+        android:textColor="@color/hint_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_get_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:text="+1000"
+        android:textColor="@color/seleted_text_color"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_car_invite_date"
+        android:layout_marginTop="8dp"
+        android:background="@color/diver_color" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:gravity="center"
+    android:text="是否确认删除"
+    android:textColor="@color/c666"
+    android:textSize="15sp" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/diver_color" />
+
+
+<TextView
+    android:id="@+id/certain_button"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:gravity="center"
+    android:text="确定"
+    android:textColor="@color/black_text_color"
+    android:textSize="15sp" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/diver_color" />
+
+
+<TextView
+    android:id="@+id/cancel_button"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:gravity="center"
+    android:text="取消"
+    android:textColor="@color/black_text_color"
+    android:textSize="15sp" />
+
+</LinearLayout>

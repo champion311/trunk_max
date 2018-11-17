@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_mine">
+
+    <com.shosen.max.widget.UpRoundImageView
+        android:id="@+id/iv_order_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product_image"
+        app:drawType="drawTop"
+        app:radius="5dp" />
+
+    <TextView
+        android:id="@+id/tv_order_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_order_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="订单信息"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_order_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="已完成"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_info"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓   名:   张大勇"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="联系电话： 15810159436"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="地      区:   北京"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="订单编号:   123456789"
+            android:textColor="@color/c666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="订单时间: 2018/09/10 15:30"
+            android:textColor="@color/c666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="订单价格: 25,000"
+            android:textColor="@color/c666"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

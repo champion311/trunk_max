@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.shosen.max.widget.UpRoundImageView
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_image"
+        android:visibility="gone"
+        app:drawType="drawAll"
+        app:radius="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:text="取消原因"
+        android:textColor="@color/c666"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/CommonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/canel_reason1" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/CommonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/canel_reason2" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/CommonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/canel_reason3" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/CommonRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/canel_reason4" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/diver_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/cancle_immeiately"
+            android:textColor="@color/c666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_pay_continue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/seleted_text_color"
+            android:gravity="center"
+            android:text="@string/reconsider"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

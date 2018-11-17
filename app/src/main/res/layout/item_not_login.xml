@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/item_common_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="208dp"
+        android:text="您还没有登录"
+        android:textColor="#ff333333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_quit_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/quit_login_bg"
+        android:gravity="center"
+        android:text="@string/imme_login"
+        android:textColor="@color/seleted_text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

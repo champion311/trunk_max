@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_common_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:text="我的津贴"
+        android:textColor="@color/c666"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_my_allowance_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:drawableRight="@drawable/question_mark"
+        android:drawablePadding="10dp"
+        android:text="¥10000"
+        android:textColor="@color/get_verify_color"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_get_money"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/quit_login_bg"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="@color/back_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shadow_allowance"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="规则介绍"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@id/tv_title2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="A"
+                android:textColor="@color/black_text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user_interation" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="B"
+                android:textColor="@color/black_text_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_allo_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/my_allowance_intro"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_allo_intro"
+            android:layout_marginTop="27dp">
+
+            <TextView
+                android:id="@+id/tv_car_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:text="已邀请车主"
+                android:textColor="@color/black_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_reward_permonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="33dp"
+                android:layout_toRightOf="@id/tv_car_owner"
+                android:text="每月奖励"
+                android:textColor="@color/black_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_to_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="33dp"
+                android:layout_toRightOf="@id/tv_reward_permonth"
+                android:text="待发月份"
+                android:textColor="@color/black_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_left_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="33dp"
+                android:layout_toRightOf="@id/tv_to_month"
+                android:text="剩余总计"
+                android:textColor="@color/black_text_color"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/tv_reward_permonth_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_reward_permonth"
+                android:layout_alignLeft="@id/tv_reward_permonth"
+                android:layout_alignRight="@id/tv_reward_permonth"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="1000"
+                android:textColor="@color/seleted_text_color"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tv_to_month_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_to_month"
+                android:layout_alignLeft="@id/tv_to_month"
+                android:layout_alignRight="@id/tv_to_month"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/seleted_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_left_money_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_left_money"
+                android:layout_alignLeft="@id/tv_left_money"
+                android:layout_alignRight="@id/tv_left_money"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="5000"
+                android:textColor="@color/seleted_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_car_owner_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_car_owner"
+                android:layout_alignLeft="@id/tv_car_owner"
+                android:layout_alignRight="@id/tv_car_owner"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/seleted_text_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_bg">
+
+    <com.shosen.max.widget.CircleImageView
+        android:id="@+id/iv_message_avater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/default_avater" />
+
+    <TextView
+        android:id="@+id/tv_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/iv_message_avater"
+        android:text="酷酷的滕"
+        android:textColor="@color/c666"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tv_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_name"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_priase_icon"
+        android:layout_toRightOf="@id/iv_message_avater"
+        android:text="这车什么时候预订?"
+        android:textColor="@color/black_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/iv_message_avater"
+        android:text="09:58"
+        android:textColor="@color/c999"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_message_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/tv_message_time"
+        android:text="删除"
+        android:textColor="@color/c999"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_priase_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/priase_drawable" />
+
+    <com.shosen.max.widget.circle.VerticalCommentWidget
+        android:id="@+id/replys_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_time"
+        android:layout_alignLeft="@id/tv_message_time"
+        android:layout_alignRight="@id/iv_priase_icon"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reply_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/replys_wrapper"
+        android:layout_marginTop="25dp"
+        android:background="@color/diver_color" />
+
+</RelativeLayout>

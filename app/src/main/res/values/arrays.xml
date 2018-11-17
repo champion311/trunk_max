@@ -1,0 +1,45 @@
+<resources>
+    <string-array name="grid_array">
+        <item>活动</item>
+        <item>签到</item>
+        <item>邀请有奖</item>
+        <item>商城</item>
+    </string-array>
+
+    <string-array name="counts">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>6个月</item>
+        <item>9个月</item>
+        <item>12个月</item>
+        <item>18个月</item>
+        <item>24个月</item>
+        <item>30个月</item>
+        <item>36个月</item>
+    </string-array>
+
+    <string-array name="moneys">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+    </string-array>
+
+    <string-array name="user_title">
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+</resources>

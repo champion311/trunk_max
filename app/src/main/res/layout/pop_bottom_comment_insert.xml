@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ed_comment"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:gravity="top|left"
+    android:hint="请输入你的评论"
+    android:imeOptions="actionSend"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="8dp"
+    android:singleLine="true"
+    android:textColor="@color/black_text_color"
+    android:textColorHint="@color/hint_color"
+    android:textCursorDrawable="@null"
+    android:textSize="15sp">
+
+</EditText>

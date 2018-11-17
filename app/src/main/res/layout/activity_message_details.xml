@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/rl_top_header"
+        layout="@layout/item_common_header"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="top"
+        android:visibility="visible" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed|exitUntilCollapsed">
+
+
+                <com.shosen.max.widget.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/default_avater" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:text="酷酷的滕"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_alignLeft="@id/tv_name"
+                    android:layout_marginTop="2dp"
+                    android:text="2018-08-06"
+                    android:textColor="@color/c999"
+                    android:textSize="16sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="超酷的新能源汽车"
+                    android:textColor="@color/black_text_color" />
+
+                <com.shosen.max.widget.circle.NineGridView
+                    android:id="@+id/ng_image_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_des"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home_image" />
+
+                <TextView
+                    android:id="@+id/tv_praise_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_image_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableLeft="@drawable/priase_drawable"
+                    android:drawablePadding="9dp"
+                    android:text="100"
+                    android:textColor="@color/add_priase_text_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_praise_button"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="评论"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_comment_text"
+            android:paddingBottom="50dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <include
+            layout="@layout/layout_message_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="bottom" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
+
+
